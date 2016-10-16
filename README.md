@@ -14,3 +14,13 @@ Las **migas de pan** son enlaces html que ayudan:
 Implementar las migas de pan con el marcado de datos (microdata) en el 
 detail.html del post.
 
+##Tools:
+
+- Google Structured Data [Testing Tools](https://search.google.com/structured-data/testing-tool)
+- Twitter card [Card Validator Tool](https://cards-dev.twitter.com/validator)
+- Other Tool [Tool](http://webcodetools.com/)
+
+##Documentation:
+- [Google docs](https://developers.google.com/search/docs/guides/)
+- [Twitwe card docs](https://dev.twitter.com/cards/overview)
+ 
