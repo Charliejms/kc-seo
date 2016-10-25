@@ -13,9 +13,9 @@
     <!-- Open graph -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="With Dodgers, Dave Roberts Has Another Chance to Haunt the Yankees">
-    <meta property="og:site_name" content="ec2-52-55-95-216.compute-1.amazonaws.com/">
-    <meta property="og:url" content="ec2-52-55-95-216.compute-1.amazonaws.com/r.cacuango/detail.html">
-    <meta property="og:image" content="ec2-52-55-95-216.compute-1.amazonaws.com/r.cacuango/dist/img/contents/baseball-lg.jpg">
+    <meta property="og:site_name" content="http://ec2-52-55-95-216.compute-1.amazonaws.com/">
+    <meta property="og:url" content="http://ec2-52-55-95-216.compute-1.amazonaws.com/r.cacuango/detail.html">
+    <meta property="og:image" content="http://ec2-52-55-95-216.compute-1.amazonaws.com/r.cacuango/dist/img/contents/baseball-lg.jpg">
     <meta property="article:published_time" content="2016-09-12">
     <meta property="article:author" content="billywitz">
     <!-- Open graph end -->
@@ -24,7 +24,7 @@
     <meta name="twitter:site" content="@wordplease">
     <meta name="twitter:title" content="With Dodgers, Dave Roberts Has Another Chance to Haunt the Yankees">
     <meta name="twitter:description" content="Roberts, whose pivotal steal started the Red Sox’ rally over the Yankees in the 2004 A.L.C.S., visits the Bronx this week as manager of the Dodgers.">
-    <meta name="twitter:image" content="ec2-52-55-95-216.compute-1.amazonaws.com/r.cacuango/dist/img/contents/baseball-lg.jpg">
+    <meta name="twitter:image" content="http://ec2-52-55-95-216.compute-1.amazonaws.com/r.cacuango/dist/img/contents/baseball-lg.jpg">
     <!-- End Twitter Card -->
 
     <link rel="stylesheet" type="text/css" href="dist/css/style.css">
@@ -89,7 +89,38 @@
     </nav>
 </header>
 <main>
+    <!--BreadcrumbList-->
     <div class="container">
+        <ol class="list-inline" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope
+                itemtype="http://schema.org/ListItem">
+                <a itemscope itemtype="http://schema.org/Thing"
+                   itemprop="item" href="https://example.com/sports">
+                    <span itemprop="name">Sports</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+            ›
+            <li itemprop="itemListElement" itemscope
+                itemtype="http://schema.org/ListItem">
+                <a itemscope itemtype="http://schema.org/Thing"
+                   itemprop="item" href="https://example.com/sports/baseball/">
+                    <span itemprop="name">Baseball</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+            ›
+            <li itemprop="itemListElement" itemscope
+                itemtype="http://schema.org/ListItem">
+                <a itemscope itemtype="http://schema.org/Thing"
+                   itemprop="item" href="https://example.com/sports/baseball/yankees">
+                    <span itemprop="name">New York Yankees</span>
+                </a>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+        <!--BreadcrumbList End-->
+
         <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://google.com/article"/>
         <article itemscope itemtype="http://schema.org/NewsArticle" class="article single">
             <div class="row">
@@ -97,17 +128,6 @@
                     <header class="header">
                         <h1 itemprop="headline" class="title">With Dodgers, Dave Roberts Has Another Chance to Haunt the Yankees</h1>
                         <meta itemprop="datePublished" content="2016-09-12"/>
-                        <!--requrido si se trada de un aritculo publisher-->
-                        <h5 itemprop="publisher" itemscope itemtype="https://schema.org/Organizatio">
-                            <span >Vice</span>
-                            <meta itemprop="name" content="Google">
-                            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                                <img src="ec2-52-55-95-216.compute-1.amazonaws.com/r.cacuango/dist/avatar/user-placeholder.png"/>
-                                <meta itemprop="url" content="ec2-52-55-95-216.compute-1.amazonaws.com/r.cacuango/dist/avatar/user-placeholder.png">
-                                <meta itemprop="width" content="60">
-                                <meta itemprop="height" content="60">
-                            </div>
-                        </h5>
                     </header>
                 </div>
                 <div class="col-xs-12 col-xs-p-0">
@@ -185,6 +205,16 @@
                             fielder and leadoff hitter.</p>
                     </div>
                 </div>
+            </div>
+            <!--requrido publisher,si se trada de un aritculo-->
+            <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                    <img class="hidden" src="https:/example.com/logo-organization.jpg"/>
+                    <meta itemprop="url" content="https:/example.com/logo-organization.jpg">
+                    <meta itemprop="width" content="600">
+                    <meta itemprop="height" content="60">
+                </div>
+                <meta itemprop="name" content="Google">
             </div>
         </article>
     </div>
